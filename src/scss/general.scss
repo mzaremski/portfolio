@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+/*
+    background:
+        linear-gradient(90deg,
+            #e0c688 0%,
+            #d1a981 25%,
+            #c37881 50%,
+            #6d405b 75%,
+            #383957 100%
+        );
+    background: linear-gradient(90deg,
+        rgba(254, 222, 150, 1) 0%,
+        rgba(255, 221, 123, 1) 10%,
+        rgba(254, 203, 111, 1) 20%,
+        rgba(252, 155, 112, 1) 32%,
+        rgba(237, 106, 111, 1) 45%,
+        rgba(203, 78, 108, 1) 59%,
+        rgba(140, 65, 104, 1) 72%,
+        rgba(81, 60, 99, 1) 87%,
+        rgba(57, 59, 98, 1) 100%);
+*/
+}
+
+
+
+.page-section{
+    z-index: -0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+.section-header{
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.3) -70%, transparent);
+    padding: 10px;
+    padding-top: 60px;
+    width: 100%;
+    .title{
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 8px black;
+        font-size: 3.5em;
+        font-weight:lighter;
+    }
+    .title:after{
+        width: 100px;
+        margin: 0 auto;
+        content: "";
+        display: block;
+        border-top: 1px white solid;
+        box-shadow: 3px 3px 8px black;
+    }
+}

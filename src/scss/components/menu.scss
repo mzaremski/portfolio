@@ -1,0 +1,36 @@
+.menu-fullscreen{
+    position: fixed;
+    background: #CEAD9E;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+}
+
+.menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+
+
+
+    a{
+        color: inherit;
+    }
+    li{
+        list-style: none;
+        text-align: center;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        text-shadow: 6px 6px 20px rgba(0,0,0,0.4);
+        margin: 30px;
+        color: #5B485B;
+        font-family: 'Dosis', sans-serif;
+        transition: ease 0.4s;
+    }
+    li:hover{
+        transform: scale(1.5);
+        text-shadow: 3px 3px 28px rgba(0,0,0,1);
+    }
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI for Portfolio</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/page/first-section.css">
+    <link rel="stylesheet" href="css/components/hamburger.css">
+    <link rel="stylesheet" href="css/components/menu.css">
+    <link rel="stylesheet" href="css/page/about-me-section.css">
+    <link rel="stylesheet" href="css/simplegrid.css">
+    <link rel="stylesheet" href="css/fontello.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- endbuild -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet">
+</head>
+<body class="main">
+
+  <nav>
+      <div id="nav-icon3" class="nav-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    <div class="menu-fullscreen">
+        <ul class="menu">
+            <li><a href="">O mnie</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Kontakt</a></li>
+        </ul>
+    </div>
+
+  </nav>
+
+  <header class="page-section first-section">
+      <div class="gradinet gradient_first-gradient"></div>
+
+      <div class="clouds">
+          <img class="clouds__cloud clouds__cloud_vertical" src="img/fog/fog1.png" alt="">
+          <img class="clouds__cloud clouds__cloud_horizontal" src="img/fog/fog2.png" alt="">
+      </div>
+
+      <div class="personal-card">
+         <div class="personal-info">
+              <h1 class="card-name__name">Marcin Zaremski</h1>
+              <span class="card-name__short-desc">
+                  Ma zajebistą dziewczynę
+             </span>
+         </div>
+      </div>
+  </header>
+
+  <section class="page-section" id="about-me">
+      <div class="gradinet gradient_second-gradient"></div>
+
+      <header class="section-header">
+          <h2 class="title">O mnie</h2>
+      </header>
+
+
+
+  </section>
+
+    <!-- build:js -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jscript.js"></script>
+    <!-- endbuild -->
+    <script>
+
+    //Animate smooth scroll on click id href
+        $(document).ready(function() {
+             $('a[href^="#"]').on('click', function(event) {
+                 var target = $( $(this).attr('href') );
+                 if( target.length ) {
+                     event.preventDefault();
+                     $('html, body').animate({
+                         scrollTop: target.offset().top
+                     }, 800);
+                 }
+             });
+        });
+
+        $(document).ready(function(){
+            $(".menu-fullscreen").hide()
+        	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        		$(this).toggleClass('open');
+        		$(".menu-fullscreen").toggle();
+        	});
+        });
+
+    </script>
+</body>
+</html>
