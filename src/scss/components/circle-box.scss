@@ -1,0 +1,42 @@
+.circle-box{
+    min-height: 100px;
+    min-width: 100px;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg,
+            rgba(224, 198, 136, 0.8) 0%,
+            rgba(209, 169, 129, 0.5) 25%,
+            rgba(195, 120, 129, 0.5) 50%,
+            rgba(109, 64, 91, 0.5) 75%,
+            rgba(56, 57, 87, 0.8) 100%
+        );
+    background-size: 200%;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    animation-name: shadow-spin, wavy-colors;
+    animation-duration: 30s, 15s;
+    animation-timing-function: linear, ease;
+    animation-iteration-count: infinite;
+
+    .circle-box__img{
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+//responsible for responsive circle
+// .circle-box:after {
+//   content: "";
+//   display: block;
+//   padding-bottom: 100%;
+// }

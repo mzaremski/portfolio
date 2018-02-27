@@ -1,0 +1,43 @@
+@keyframes shadow-spin{
+    0%   {box-shadow: 20px 0px 50px 0px rgba(0,0,0,0.4);}
+    25% {box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.4);}
+    50% {box-shadow: -20px 0px 50px 0px rgba(0,0,0,0.4);}
+    75% {box-shadow: 0px -20px 50px 0px rgba(0,0,0,0.4);}
+    100% {box-shadow: 20px 0px 50px 0px rgba(0,0,0,0.4);}
+}
+
+
+@keyframes wavy-colors{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+@keyframes cloud-move-horizontal{
+    0%   {left: 0;}
+    50% {left: -100vw}
+    100% {left: 0}
+}
+@keyframes cloud-move-vertical{
+    0%   {top: 0;}
+    50% {top: -100vh}
+    100% {top: 0}
+}
+
+
+@-moz-keyframes backgroundMove{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+@-webkit-keyframes backgroundMove{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+@keyframes backgroundMove{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}

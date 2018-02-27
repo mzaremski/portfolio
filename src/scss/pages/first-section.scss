@@ -1,0 +1,100 @@
+// Table of Content
+//     3.1: Gradient, Clouds
+//     3.2: Card Name
+
+.first-section{
+    overflow: hidden;
+    position: relative;
+    background-image: url(../../img/nathan-anderson-129007.jpg);
+    background-size: cover;
+}
+
+/*
+======================
+3.1: Gradient, Clouds
+*/
+
+
+
+
+.clouds{
+    position: absolute;
+}
+    .clouds__cloud{
+        left: 0;
+        width: 200vw;
+        height: auto;
+        position: absolute;
+        animation-iteration-count: infinite;
+    }
+        .clouds__cloud_horizontal{
+            opacity: 0.6;
+            animation-duration: 90s;
+            animation-name: cloud-move-horizontal;
+        }
+        .clouds__cloud_vertical{
+            opacity: 0.4;
+            animation-duration: 120s;
+            animation-name: cloud-move-vertical;
+        }
+
+
+
+
+/*
+======================
+3.2: Card Name
+*/
+.personal-card {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    height: 60vh;
+    width: 60vh;
+    transform:translate(-50%, -50%);
+}
+
+.personal-info{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+    .card-name__name{
+        font-size: 10vh;
+        font-weight: lighter;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .card-name__short-desc:before{
+        display: block;
+        content: "";
+        width: 6vw;
+        margin: 0 auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.7);
+        margin-bottom: 10px;
+    }
+    .card-name__short-desc{
+        font-size: 1.5em;
+        text-transform: capitalize;
+        letter-spacing: 10px;
+    }
+
+
+
+
+
+
+.scroll-page-trigger{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 5em;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
