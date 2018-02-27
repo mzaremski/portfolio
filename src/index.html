@@ -18,13 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
 </head>
 <body class="main">
+<div id="fullpage">
 
 
-
-  <header class="page-section first-section">
+  <header class="page-section first-section section">
       <div class="gradinet gradient_first-gradient"></div>
 
       <div class="clouds">
@@ -40,25 +43,26 @@
              </span>
          </div>
       </div>
+      <nav>
+          <div id="nav-icon3" class="nav-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+        <div class="menu-fullscreen">
+            <ul class="menu">
+                <li><a href="">O mnie</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Kontakt</a></li>
+            </ul>
+        </div>
+      </nav>
   </header>
 
-  <nav>
-      <div id="nav-icon3" class="nav-trigger">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-    <div class="menu-fullscreen">
-        <ul class="menu">
-            <li><a href="">O mnie</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Kontakt</a></li>
-        </ul>
-    </div>
-  </nav>
 
-  <section class="page-section" id="about-me">
+
+  <section class="page-section section" id="about-me">
       <div class="gradinet gradient_second-gradient"></div>
 
       <header class="section-header">
@@ -69,7 +73,7 @@
           <div class="col-1-2 paralax">
               <figure class="circle-box avatar" data-depth="0.3">
                   <div class="circle-box__img">
-                      <img src="http://haveabite.in/uploads/2016/12/13315603_1128717170524759_5827687323415938855_n.jpg" alt="">
+                      <img src="img/marcin-zaremski-avatar.jpg" alt="">
                   </div>
               </figure>
           </div>
@@ -80,21 +84,18 @@
               <p class="about-me_content">
                   Deleniti illo alias quasi animi placeat, repellat esse obcaecati illum, a dolores est sunt. Placeat enim, dolorum obcaecati vitae tempora laudantium harum dolor, officia fugiat reprehenderit ratione. Nesciunt, sit? Laborum quod illum quam, nemo voluptatem quo, obcaecati temporibus unde ratione tempore aspernatur perferendis rem placeat dolore blanditiis repellat!
               </p>
-              <a href="" class="icon icon-button"><i class="icon-github-circled"></i></a>
-              <a href="" class="icon icon-button">CV</a>
+              <a href="https://github.com/mzaremski" target="_blank" class="icon icon-button"><i class="icon-github-circled"></i></a>
+              <a href="http://marcinzaremski.pl/Marcin_Zaremski_CV.pdf" target="_blank" class="icon icon-button">CV</a>
 
 
           </div>
       </div>
-
-
   </section>
 
 
 
 
     <!-- build:js -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jscript.js"></script>
     <!-- endbuild -->
     <script>
@@ -103,6 +104,10 @@
     elementsToParalax.forEach(function(item){
          new Parallax(item)
     })
+
+    $(document).ready(function() {
+    	$('#fullpage').fullpage();
+    });
 
 
     //Animate smooth scroll on click id href
@@ -122,10 +127,11 @@
             $(".menu-fullscreen").hide()
         	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
         		$(this).toggleClass('open');
-        		$(".menu-fullscreen").toggle();
+        		$(".menu-fullscreen").fadeToggle( 300 );
         	});
         });
 
     </script>
+</div>
 </body>
 </html>
