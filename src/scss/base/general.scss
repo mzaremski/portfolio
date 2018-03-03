@@ -34,6 +34,11 @@ a{
     overflow: visible!important;
 }
 
+figure{
+    margin: 0;
+    padding:0;
+}
+
 
 .page-section{
     z-index: -0;
@@ -57,6 +62,13 @@ a{
     -webkit-animation: backgroundMove  15s ease infinite;
     -moz-animation: backgroundMove  15s ease infinite;
     animation: backgroundMove  15s ease infinite;
+}
+.gradient_third-gradient{
+    background: linear-gradient(-20deg, rgba(133, 124, 191, 0.8) , rgba(208, 197, 169, 0.7));
+    background-size: 200% 200%;
+    -webkit-animation: backgroundMove  12s ease infinite;
+    -moz-animation: backgroundMove  12s ease infinite;
+    animation: backgroundMove  12s ease infinite;
 }
 
 

@@ -5,6 +5,17 @@
     height: 100vh;
     width: 100vw;
     top: 0;
+    right: -100vw;//menu hidden
+    opacity:0;//menu hidden
+    transition: 0.3s ease;
+}
+.menu-fullscreen_visible{ right: 0; opacity:1}
+
+
+.nav-trigger{
+    display: block;
+    position: fixed;
+    z-index: 100;
 }
 
 .menu {
@@ -12,14 +23,13 @@
     top: 50%;
     transform: translateY(-80%);
 
-
-
     li{
         list-style: none;
         text-align: center;
         margin: 30px;
 
         a{
+            box-sizing: border-box;
             font-size: 3em;
             display: block;
             text-transform: uppercase;

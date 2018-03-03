@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/components/hamburger.css">
     <link rel="stylesheet" href="css/components/menu.css">
     <link rel="stylesheet" href="css/pages/about-me-section.css">
+    <link rel="stylesheet" href="css/pages/portfolio.css">
     <link rel="stylesheet" href="css/base/animations.css">
     <link rel="stylesheet" href="css/components/circle-box.css">
     <link rel="stylesheet" href="css/vendors/buttons.css">
@@ -18,15 +19,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
+    <style>
+    .fp-tableCell{
+        /* fullpage.js config */
+        position: absolute!important;
+    }
+    </style>
 </head>
 <body class="main">
+
+<nav>
+    <a tabindex="1" id="nav-icon3" class="nav-trigger">
+        <span></span><span></span><span></span><span></span>
+    </a>
+  <div class="menu-fullscreen menu-fullscreen_hidden">
+      <ul class="menu">
+          <li><a href="omnie">O mnie</a></li>
+          <li><a href="port">Portfolio</a></li>
+          <li><a href="asda">Kontakt</a></li>
+      </ul>
+  </div>
+</nav>
+
 <div id="fullpage">
-
-
   <header class="page-section first-section section">
       <div class="gradinet gradient_first-gradient"></div>
 
@@ -39,27 +59,12 @@
          <div class="personal-info">
               <h1 class="card-name__name">Marcin Zaremski</h1>
               <span class="card-name__short-desc">
-                  Junior Front-End
+                 JavaScript Developer
              </span>
          </div>
       </div>
-      <nav>
-          <div id="nav-icon3" class="nav-trigger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-        <div class="menu-fullscreen">
-            <ul class="menu">
-                <li><a href="">O mnie</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-        </div>
-      </nav>
-  </header>
 
+  </header>
 
 
   <section class="page-section section" id="about-me">
@@ -92,13 +97,109 @@
       </div>
   </section>
 
+  <section class="section portfolio">
+        <div class="gradinet gradient_third-gradient"></div>
+        <header class="section-header">
+          <h2 class="title">Portfolio</h2>
+        </header>
 
+        <div class="works slide">
+            <div class="grid">
+                    <div class="col-1-3">
+                        <article class="work">
+                            <figure>
+                                <img class="work_img" src="img/historymapscreen.png" id="test" alt="">
+                            </figure>
+                            <header>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
+                        </article>
+                    </div>
+
+
+                    <div class="col-1-3">
+                        <article class="work">
+                            <figure>
+                                <img class="work_img" src="img/minipmscreen.png" id="test2" alt="">
+                            </figure>
+                            <header>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-1-3">
+                        <article class="work">
+                            <figure>
+                                <img class="work_img" src="img/newsdeskscreen.png" id="test3" alt="">
+                            </figure>
+                            <header>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-1-3">
+                        <article class="work">
+                            <figure>
+                                <img class="work_img" src="img/historymapscreen.png" id="test" alt="">
+                            </figure>
+                            <header>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
+                        </article>
+                    </div>
+
+
+                    <div class="col-1-3">
+                        <article class="work">
+                            <figure>
+                                <img class="work_img" src="img/minipmscreen.png" id="test2" alt="">
+                            </figure>
+                            <header>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-1-3">
+                        <article class="work">
+                            <figure>
+                                <img class="work_img" src="img/newsdeskscreen.png" id="test3" alt="">
+                            </figure>
+                            <header>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
+                        </article>
+                    </div>
+
+
+
+            </div>
+        </div>
+  </section>
 
 
     <!-- build:js -->
     <script src="js/jscript.js"></script>
     <!-- endbuild -->
+
+
     <script>
+
+    // $('#test').tilt({
+    //     glare: true,
+    //     maxGlare: 1,
+    //     maxTilt: 20,
+    //     speed: 500,
+    //     perspective: 3000
+    // })
 
     var elementsToParalax = document.querySelectorAll('.paralax');
     elementsToParalax.forEach(function(item){
@@ -106,7 +207,13 @@
     })
 
     $(document).ready(function() {
-    	$('#fullpage').fullpage();
+    	$('#fullpage').fullpage({
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            scrollingSpeed: 600,
+            controlArrows: true
+        });
     });
 
 
@@ -124,10 +231,11 @@
         });
 
         $(document).ready(function(){
-            $(".menu-fullscreen").hide()
+            //$(".menu-fullscreen").hide()
         	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
         		$(this).toggleClass('open');
-        		$(".menu-fullscreen").fadeToggle( 300 );
+        		$(".menu-fullscreen").toggleClass( "menu-fullscreen_visible" );
+                //$.fn.fullpage.destroy('all');
         	});
         });
 

@@ -1,0 +1,61 @@
+.portfolio {
+  background-image: url(../../img/ronald-smeets-208652.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: -1; }
+
+.works {
+  position: absolute !important;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  top: 50% !important; }
+
+.work {
+  width: 100%;
+  border-radius: 8%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5); }
+  .work .work_img {
+    position: absolute;
+    margin: 0 auto;
+    height: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .work .work_img:hover {
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3); }
+  .work header {
+    position: absolute;
+    bottom: -1px;
+    text-align: center;
+    width: 100%;
+    background: -webkit-linear-gradient(60deg, #af8996, #ceb6ad);
+    background: -o-linear-gradient(60deg, #af8996, #ceb6ad);
+    background: linear-gradient(30deg, #af8996, #ceb6ad);
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
+  .work p {
+    display: none;
+    position: absolute;
+    background: #956676; }
+  .work p:hover {
+    display: block; }
+
+.work:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; }
+
+.work:hover header {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%); }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcnRmb2xpby5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwREFBMEQ7RUFDMUQsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixZQUFZLEVBQUU7O0FBRWhCO0VBQ0UsOEJBQThCO0VBQzlCLCtDQUF1QztNQUF2QywyQ0FBdUM7VUFBdkMsdUNBQXVDO0VBQ3ZDLG9CQUFvQixFQUFFOztBQUV4QjtFQUNFLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixvQkFBb0I7RUFDcEIsb0RBQTRDO1VBQTVDLDRDQUE0QyxFQUFFO0VBQzlDO0lBQ0UsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixhQUFhO0lBQ2IseUJBQWlCO0lBQWpCLG9CQUFpQjtJQUFqQixpQkFBaUIsRUFBRTtFQUNyQjtJQUNFLDhCQUFzQjtRQUF0QiwwQkFBc0I7WUFBdEIsc0JBQXNCLEVBQUU7RUFDMUI7SUFDRSxtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osNkRBQXFEO0lBQXJELHdEQUFxRDtJQUFyRCxxREFBcUQ7SUFDckQseUJBQWlCO0lBQWpCLG9CQUFpQjtJQUFqQixpQkFBaUIsRUFBRTtFQUNyQjtJQUNFLGNBQWM7SUFDZCxtQkFBbUI7SUFDbkIsb0JBQW9CLEVBQUU7RUFDeEI7SUFDRSxlQUFlLEVBQUU7O0FBRXJCO0VBQ0UsWUFBWTtFQUNaLGVBQWU7RUFDZixxQkFBcUIsRUFBRTs7QUFFekI7RUFDRSxvQ0FBNEI7TUFBNUIsZ0NBQTRCO1VBQTVCLDRCQUE0QixFQUFFIiwiZmlsZSI6InBhZ2VzL3BvcnRmb2xpby5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucG9ydGZvbGlvIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2ltZy9yb25hbGQtc21lZXRzLTIwODY1Mi5qcGcpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IC0xOyB9XG5cbi53b3JrcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZSAhaW1wb3J0YW50O1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSkgIWltcG9ydGFudDtcbiAgdG9wOiA1MCUgIWltcG9ydGFudDsgfVxuXG4ud29yayB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXItcmFkaXVzOiA4JTtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICBib3gtc2hhZG93OiA0cHggNHB4IDMwcHggcmdiYSgwLCAwLCAwLCAwLjUpOyB9XG4gIC53b3JrIC53b3JrX2ltZyB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICB0cmFuc2l0aW9uOiAwLjNzOyB9XG4gIC53b3JrIC53b3JrX2ltZzpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjMpOyB9XG4gIC53b3JrIGhlYWRlciB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJvdHRvbTogLTFweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDMwZGVnLCAjYWY4OTk2LCAjY2ViNmFkKTtcbiAgICB0cmFuc2l0aW9uOiAwLjFzOyB9XG4gIC53b3JrIHAge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJhY2tncm91bmQ6ICM5NTY2NzY7IH1cbiAgLndvcmsgcDpob3ZlciB7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cblxuLndvcms6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBkaXNwbGF5OiBibG9jaztcbiAgcGFkZGluZy1ib3R0b206IDEwMCU7IH1cblxuLndvcms6aG92ZXIgaGVhZGVyIHtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDEwMCUpOyB9XG4iXX0= */
