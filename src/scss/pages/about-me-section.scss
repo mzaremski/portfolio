@@ -7,6 +7,15 @@
 }
 
 
+
+.gradient_second-gradient{
+    background: linear-gradient(-20deg, rgba(158, 116, 123,0.7) , rgba(215, 207, 186, 0.8));
+    background-size: 200% 200%;
+    -webkit-animation: backgroundMove  15s ease infinite;
+    -moz-animation: backgroundMove  15s ease infinite;
+    animation: backgroundMove  15s ease infinite;
+}
+
 .avatar{
     width: 100%;
     margin: 0;

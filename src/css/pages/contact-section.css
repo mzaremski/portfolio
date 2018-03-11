@@ -1,0 +1,33 @@
+.contact {
+  background-image: url(../../img/nathan-anderson-129007.jpg);
+  background-size: cover;
+  position: relative; }
+  .contact .section-header {
+    position: absolute;
+    z-index: 1; }
+
+.wrap-contact100 {
+  min-height: 0px !important;
+  position: absolute !important;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+      -ms-transform: translateY(-45%);
+          transform: translateY(-45%); }
+
+.gradient_fourth-gradient {
+  background: rgba(54, 52, 71, 0.85);
+  z-index: 0; }
+
+.contact-info {
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: lighter;
+  color: white;
+  font-size: 2.5em;
+  text-align: right; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhY3Qtc2VjdGlvbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw0REFBNEQ7RUFDNUQsdUJBQXVCO0VBQ3ZCLG1CQUFtQixFQUFFO0VBQ3JCO0lBQ0UsbUJBQW1CO0lBQ25CLFdBQVcsRUFBRTs7QUFFakI7RUFDRSwyQkFBMkI7RUFDM0IsOEJBQThCO0VBQzlCLFNBQVM7RUFDVCxvQ0FBNEI7TUFBNUIsZ0NBQTRCO1VBQTVCLDRCQUE0QixFQUFFOztBQUVoQztFQUNFLG1DQUFtQztFQUNuQyxXQUFXLEVBQUU7O0FBRWY7RUFDRSxlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVCxvQ0FBNEI7TUFBNUIsZ0NBQTRCO1VBQTVCLDRCQUE0QjtFQUM1QixxQkFBcUI7RUFDckIsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixrQkFBa0IsRUFBRSIsImZpbGUiOiJwYWdlcy9jb250YWN0LXNlY3Rpb24uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhY3Qge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi4vLi4vaW1nL25hdGhhbi1hbmRlcnNvbi0xMjkwMDcuanBnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgcG9zaXRpb246IHJlbGF0aXZlOyB9XG4gIC5jb250YWN0IC5zZWN0aW9uLWhlYWRlciB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHotaW5kZXg6IDE7IH1cblxuLndyYXAtY29udGFjdDEwMCB7XG4gIG1pbi1oZWlnaHQ6IDBweCAhaW1wb3J0YW50O1xuICBwb3NpdGlvbjogYWJzb2x1dGUgIWltcG9ydGFudDtcbiAgdG9wOiA1MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNDUlKTsgfVxuXG4uZ3JhZGllbnRfZm91cnRoLWdyYWRpZW50IHtcbiAgYmFja2dyb3VuZDogcmdiYSg1NCwgNTIsIDcxLCAwLjg1KTtcbiAgei1pbmRleDogMDsgfVxuXG4uY29udGFjdC1pbmZvIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgZm9udC13ZWlnaHQ6IGxpZ2h0ZXI7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAyLjVlbTtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7IH1cbiJdfQ== */

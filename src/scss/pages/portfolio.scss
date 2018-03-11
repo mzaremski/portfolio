@@ -1,67 +1,52 @@
 .portfolio > .section-header{
-    // position: absolute;
-    // z-index: 100;
+    position: absolute;
+    z-index: 100;
+    .title{
+        position: relative;
+        right: -25vw;
+    }
 }
 
+.gradient_third-gradient{
+    background:rgba(170, 161, 180, 0.8);
+}
 
 .portfolio{
-    background-image: url(../../img/ronald-smeets-208652.jpg);
+    background-image: url(../../img/andy-kerr-153378-unsplash.jpg);
     background-size: cover;
     position: relative;
     z-index: -1;
 }
 
-
-.works{
-    position: absolute!important;
-    transform: translateY(-50%)!important;
-    top:50%!important;
-}
-
-
-
 .work{
-    width: 100%;
-    border-radius: 8%;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
-    box-shadow: 4px 4px 30px rgba(0,0,0,0.5);
+    top: 0;
+    position: absolute;
 
-    .work_img{
-        position: absolute;
-        margin: 0 auto;
-        height: 100%;
-        transition: 0.3s;
+    .work_image{
+        width: 50vw!important;
+        height: 100vh;
+        float: left;
+        opacity: 0.8;
+        transition: 1s;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
-    .work_img:hover{
-        transform: scale(1.3);
-    }
-    header{
-        position: absolute;
-        bottom: -1px;
-        text-align: center;
-        width: 100%;
-        background: linear-gradient(30deg, rgb(175, 137, 150), rgb(206, 182, 173));
-        transition: 0.1s;
-    }
-    p{
-        display: none;
-        position: absolute;
-        background: #956676;
-    }
-    p:hover{
+    .work_content{
         display: block;
+        width: 50vw;
+        float: left;
+        margin-top: 29vh;
+        padding: 100px;
+        box-sizing: border-box;
+        color: #303145;
+        font-size: 1.5em;
     }
-}
-.work:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
 
-.work:hover{
-    header{
-        transform: translateY(100%);
+    .work_title{
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1.4em;
     }
 }

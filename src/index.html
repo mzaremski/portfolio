@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UI for Portfolio</title>
+    <title>Marcin Zaremski Javascript & Front-End Developer</title>
     <!-- build:css -->
     <link rel="stylesheet" href="css/base/general.css">
     <link rel="stylesheet" href="css/vendors/simplegrid.css">
@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/components/menu.css">
     <link rel="stylesheet" href="css/pages/about-me-section.css">
     <link rel="stylesheet" href="css/pages/portfolio.css">
+    <link rel="stylesheet" href="css/pages/contact-section.css">
     <link rel="stylesheet" href="css/base/animations.css">
     <link rel="stylesheet" href="css/components/circle-box.css">
+    <link rel="stylesheet" href="css/components/contact-form.css">
     <link rel="stylesheet" href="css/vendors/buttons.css">
     <link rel="stylesheet" href="css/fontello.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
     <!-- endbuild -->
@@ -34,20 +36,16 @@
 <body class="main">
 
 <nav>
-    <a tabindex="1" id="nav-icon3" class="nav-trigger">
-        <span></span><span></span><span></span><span></span>
-    </a>
-  <div class="menu-fullscreen menu-fullscreen_hidden">
       <ul class="menu">
-          <li><a href="omnie">O mnie</a></li>
-          <li><a href="port">Portfolio</a></li>
-          <li><a href="asda">Kontakt</a></li>
+          <li><a href="#first-section">Start</a></li>
+          <li><a href="#about-me">O mnie</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Kontakt</a></li>
       </ul>
-  </div>
 </nav>
 
 <div id="fullpage">
-  <header class="page-section first-section section">
+  <header class="page-section first-section section" id="first-section">
       <div class="gradinet gradient_first-gradient"></div>
 
       <div class="clouds">
@@ -97,97 +95,114 @@
       </div>
   </section>
 
-  <section class="section portfolio">
+  <section class="section portfolio" id="portfolio">
         <div class="gradinet gradient_third-gradient"></div>
         <header class="section-header">
           <h2 class="title">Portfolio</h2>
         </header>
 
-        <div class="works slide">
-            <div class="grid">
-                    <div class="col-1-3">
-                        <article class="work">
-                            <figure>
-                                <img class="work_img" src="img/historymapscreen.png" id="test" alt="">
-                            </figure>
-                            <header>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                            </header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
-                        </article>
+        <div class="slide">
+            <article class="work">
+                <figure class="work_image">
+                    <img src="https://d316acfc88wber.cloudfront.net/global/phones/PT8/11product-chapter-mobile-960x1080.png" alt="">
+                </figure>
+
+                <div class="work_content paralax">
+                    <div data-depth="0.1">
+                        <header>
+                            <h3 class="work_title">Lorem ipsum dolor sit.</h3>
+                        </header>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit itaque, expedita aut in maiores cupiditate fuga aliquam, cumque animi delectus libero est eos nostrum, sequi velit eum accusantium eius. Commodi tempora quis fugiat totam eaque ratione neque, sit labore doloremque.
+                        </p>
                     </div>
-
-
-                    <div class="col-1-3">
-                        <article class="work">
-                            <figure>
-                                <img class="work_img" src="img/minipmscreen.png" id="test2" alt="">
-                            </figure>
-                            <header>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                            </header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
-                        </article>
-                    </div>
-
-                    <div class="col-1-3">
-                        <article class="work">
-                            <figure>
-                                <img class="work_img" src="img/newsdeskscreen.png" id="test3" alt="">
-                            </figure>
-                            <header>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                            </header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
-                        </article>
-                    </div>
-
-                    <div class="col-1-3">
-                        <article class="work">
-                            <figure>
-                                <img class="work_img" src="img/historymapscreen.png" id="test" alt="">
-                            </figure>
-                            <header>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                            </header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
-                        </article>
-                    </div>
-
-
-                    <div class="col-1-3">
-                        <article class="work">
-                            <figure>
-                                <img class="work_img" src="img/minipmscreen.png" id="test2" alt="">
-                            </figure>
-                            <header>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                            </header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
-                        </article>
-                    </div>
-
-                    <div class="col-1-3">
-                        <article class="work">
-                            <figure>
-                                <img class="work_img" src="img/newsdeskscreen.png" id="test3" alt="">
-                            </figure>
-                            <header>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                            </header>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint error, quibusdam excepturi. Asperiores, fugiat dicta esse! Modi quibusdam quisquam iusto aperiam animi dolorem, voluptatum atque suscipit minima quo debitis voluptatem.</p>
-                        </article>
-                    </div>
-
-
-
-            </div>
+                </div>
+            </article>
         </div>
+
+        <div class="slide">
+            <article class="work">
+                <figure class="work_image">
+                    <img src="https://d316acfc88wber.cloudfront.net/global/phones/CAMON_CM/home-phone/CAMON-CM-product-chapter-mobile-960x1080.png" alt="">
+                </figure>
+
+                <div class="work_content paralax">
+                    <div data-depth="0.1">
+                        <header>
+                            <h3 class="work_title">Lorem ipsum dolor sit.</h3>
+                        </header>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit itaque, expedita aut in maiores cupiditate fuga aliquam, cumque animi delectus libero est eos nostrum, sequi velit eum accusantium eius. Commodi tempora quis fugiat totam eaque ratione neque, sit labore doloremque.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+  </section>
+
+  <section class="section contact" id="contact">
+      <div class="gradinet gradient_fourth-gradient"></div>
+
+      <header class="section-header">
+            <h2 class="title">Kontakt</h2>
+      </header>
+
+      <div class="grid">
+          <div class="col-1-2">
+              <p class="contact-info">
+                  Marcin Zaremski<br>
+                  marcinzara@gmail.com<br>
+                  723066170
+              </p>
+          </div>
+          <div class="col-1-2">
+              <div class="wrap-contact100">
+    			<form class="contact100-form validate-form">
+    				<div class="wrap-input100 validate-input alert-validates" data-validate="Name is required">
+    					<span class="label-input100">Name</span>
+    					<input class="input100" type="text" name="name" placeholder="Name...">
+    					<span class="focus-input100"></span>
+    				</div>
+
+    				<div class="wrap-input100 validate-input alert-validates" data-validate="Valid email is required: ex@abc.xyz">
+    					<span class="label-input100">Email</span>
+    					<input class="input100" type="text" name="email" placeholder="Email addess...">
+    					<span class="focus-input100"></span>
+    				</div>
+
+    				<div class="wrap-input100">
+    					<span class="label-input100">Phone</span>
+    					<input class="input100" type="text" name="phone" placeholder="Phone Number...">
+    					<span class="focus-input100"></span>
+    				</div>
+
+    				<div class="wrap-input100 validate-input alert-validates" data-validate="Message is required">
+    					<span class="label-input100">Message</span>
+    					<textarea class="input100" name="message" placeholder="Questions/Comments..."></textarea>
+    					<span class="focus-input100"></span>
+    				</div>
+
+    				<div class="container-contact100-form-btn">
+    					<div class="wrap-contact100-form-btn">
+    						<div class="contact100-form-bgbtn"></div>
+    						<button class="contact100-form-btn">
+    							Send
+    						</button>
+    					</div>
+    				</div>
+    			</form>
+    		</div>
+        </div>
+      </div>
+
+
+
   </section>
 
 
     <!-- build:js -->
     <script src="js/jscript.js"></script>
+    <script src="js/contact-form.js"></script>
     <!-- endbuild -->
 
 

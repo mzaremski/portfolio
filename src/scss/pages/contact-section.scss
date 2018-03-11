@@ -1,0 +1,33 @@
+.contact{
+    background-image: url(../../img/nathan-anderson-129007.jpg);
+    background-size: cover;
+    position: relative;
+
+    .section-header{
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.wrap-contact100{
+     min-height: 0px!important;
+     position: absolute!important;
+     top: 50%;
+     transform: translateY(-45%);
+}
+
+.gradient_fourth-gradient{
+    background: rgba(54, 52, 71, 0.85);
+    z-index: 0
+}
+
+.contact-info{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: lighter;
+    color: white;
+    font-size: 2.5em;
+    text-align: right;
+}
