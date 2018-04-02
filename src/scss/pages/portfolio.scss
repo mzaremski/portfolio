@@ -3,12 +3,13 @@
     z-index: 100;
     .title{
         position: relative;
-        right: -25vw;
+        right: -22vw;
     }
 }
 
 .gradient_third-gradient{
-    background:rgba(170, 161, 180, 0.8);
+    background:rgba(72, 69, 91, 0.95);
+    //background:rgba(170, 161, 180, 0.8);
 }
 
 .portfolio{
@@ -37,16 +38,18 @@
         display: block;
         width: 50vw;
         float: left;
-        margin-top: 29vh;
-        padding: 100px;
+        margin-top: 37vh;
+        padding: 0 9vw 0 4vw;
         box-sizing: border-box;
-        color: #303145;
+        color: white;
         font-size: 1.5em;
+        font-weight: lighter;
     }
 
     .work_title{
-        text-transform: uppercase;
-        font-weight: normal;
-        font-size: 1.4em;
+        text-transform: capitalize;
+        font-weight: lighter;
+        text-shadow: 4px 4px 10px black;
+        font-size: 1.6em;
     }
 }

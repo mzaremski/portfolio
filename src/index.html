@@ -36,16 +36,16 @@
 <body class="main">
 
 <nav>
-      <ul class="menu">
-          <li><a href="#first-section">Start</a></li>
-          <li><a href="#about-me">O mnie</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+      <ul class="menu" id="menu">
+          <li data-menuanchor="firstSection"><a  href="#first-section">Start</a></li>
+          <li data-menuanchor="aboutMeSection"><a  href="#about-me">O mnie</a></li>
+          <li data-menuanchor="portfolioSection"><a  href="#portfolio">Portfolio</a></li>
+          <li data-menuanchor="contactSection"><a  href="#contact">Kontakt</a></li>
       </ul>
 </nav>
 
 <div id="fullpage">
-  <header class="page-section first-section section" id="first-section">
+  <header class="page-section first-section section" data-anchor="firstSection" id="first-section">
       <div class="gradinet gradient_first-gradient"></div>
 
       <div class="clouds">
@@ -64,8 +64,7 @@
 
   </header>
 
-
-  <section class="page-section section" id="about-me">
+  <section class="page-section section" data-anchor="aboutMeSection" id="about-me">
       <div class="gradinet gradient_second-gradient"></div>
 
       <header class="section-header">
@@ -95,7 +94,7 @@
       </div>
   </section>
 
-  <section class="section portfolio" id="portfolio">
+  <section class="section portfolio" data-anchor="portfolioSection" id="portfolio">
         <div class="gradinet gradient_third-gradient"></div>
         <header class="section-header">
           <h2 class="title">Portfolio</h2>
@@ -107,8 +106,8 @@
                     <img src="https://d316acfc88wber.cloudfront.net/global/phones/PT8/11product-chapter-mobile-960x1080.png" alt="">
                 </figure>
 
-                <div class="work_content paralax">
-                    <div data-depth="0.1">
+                <div class="work_content">
+                    <div >
                         <header>
                             <h3 class="work_title">Lorem ipsum dolor sit.</h3>
                         </header>
@@ -126,21 +125,19 @@
                     <img src="https://d316acfc88wber.cloudfront.net/global/phones/CAMON_CM/home-phone/CAMON-CM-product-chapter-mobile-960x1080.png" alt="">
                 </figure>
 
-                <div class="work_content paralax">
-                    <div data-depth="0.1">
+                <div class="work_content">
                         <header>
                             <h3 class="work_title">Lorem ipsum dolor sit.</h3>
                         </header>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit itaque, expedita aut in maiores cupiditate fuga aliquam, cumque animi delectus libero est eos nostrum, sequi velit eum accusantium eius. Commodi tempora quis fugiat totam eaque ratione neque, sit labore doloremque.
                         </p>
-                    </div>
                 </div>
             </article>
         </div>
   </section>
 
-  <section class="section contact" id="contact">
+  <section class="section contact" data-anchor="contactSection" id="contact">
       <div class="gradinet gradient_fourth-gradient"></div>
 
       <header class="section-header">
@@ -198,7 +195,7 @@
 
 
   </section>
-
+</div>
 
     <!-- build:js -->
     <script src="js/jscript.js"></script>
@@ -223,6 +220,9 @@
 
     $(document).ready(function() {
     	$('#fullpage').fullpage({
+            anchors: ['firstSection', 'aboutMeSection', 'portfolioSection', 'contactSection'],
+            menu: "#menu",
+
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
 
@@ -233,17 +233,17 @@
 
 
     //Animate smooth scroll on click id href
-        $(document).ready(function() {
-             $('a[href^="#"]').on('click', function(event) {
-                 var target = $( $(this).attr('href') );
-                 if( target.length ) {
-                     event.preventDefault();
-                     $('html, body').animate({
-                         scrollTop: target.offset().top
-                     }, 800);
-                 }
-             });
-        });
+        // $(document).ready(function() {
+        //      $('a[href^="#"]').on('click', function(event) {
+        //          var target = $( $(this).attr('href') );
+        //          if( target.length ) {
+        //              event.preventDefault();
+        //              $('html, body').animate({
+        //                  scrollTop: target.offset().top
+        //              }, 800);
+        //          }
+        //      });
+        // });
 
         $(document).ready(function(){
             //$(".menu-fullscreen").hide()
@@ -255,6 +255,6 @@
         });
 
     </script>
-</div>
+
 </body>
 </html>
