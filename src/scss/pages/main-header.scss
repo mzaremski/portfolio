@@ -1,0 +1,41 @@
+.main-header{
+    overflow: hidden;
+    position: relative;
+    background-image: url(../../img/nathan-anderson-129007.jpg);
+    background-size: cover;
+    background-position: 0;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+    top: 0;
+}
+
+
+
+
+.clouds{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../img/fog/fog-vertical.png), url(../../img/fog/fog-horizontal.png);
+    background-repeat: no-repeat;
+    background-size: cover, 200% 100%;
+    background-attachment: fixed;
+    @media screen and(max-width: 800px){
+        background-size: cover, 200vh;
+    }
+    // @media screen and(max-width: 800px){
+    //     background-size: cover, 200vh;
+    // }
+}
+
+.clouds__animate{
+    @media screen and(min-width: 1000px){
+        animation-name: clouds-move;
+        animation-duration:90s;
+        animation-iteration-count: infinite;
+    }
+}

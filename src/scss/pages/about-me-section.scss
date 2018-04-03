@@ -1,0 +1,133 @@
+.about-me-section{
+    //margin-top: 100vh;
+    background-color: white;
+    z-index: 10;
+}
+
+
+@media screen and (min-width:1200px){
+    .padding-left{
+        padding-left: 3em!important;
+    }
+}
+
+.avatar{
+    margin:0 auto 5em auto;
+
+    .circle-box__img:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        display: block;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        background: url("../../img/marcin-zaremski.jpg");
+        background-position: center;
+        background-size: cover;
+        transition: 1.2s;
+        transform: scale(1.01);
+
+        :hover > &{
+            opacity: 1
+        }
+
+    }
+}
+
+@media screen and (max-width:1199px) and (min-width:670px){
+    .avatar{
+        margin: 0 auto 5em auto;
+        width: 50vw;
+    }
+}
+
+.content{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: 10px 0;
+    @media screen and (max-width:800px){
+        padding: 10px 1em;
+        text-align: justify;
+    }
+
+}
+
+
+
+.skills-list{
+    display: flex;
+    box-sizing: border-box;
+    margin: 4vh 0 10vh 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    &__element{
+        padding: 50px;
+        //position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name-of-tech{
+
+        transition: 0.4s;
+        display: block;
+        transform: scale(1) rotate(0);
+        position: absolute;
+    }
+    &__icon-of-tech{
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.575), opacity 0.3s;
+        opacity: 0;
+        transform: scale(0) ;
+        height: 3em;
+        width:3em;
+
+    }
+    &__element:hover > &__name-of-tech{
+        transform: scale(0) rotate(150deg);
+    }
+    &__element:hover > &__icon-of-tech{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.large-link{
+    //height: 20vh;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.575);
+    box-shadow: 2px 2px 25px 3px rgba(#6E5163, 0.1);
+    border-radius: 2vh;
+    //background-color: #fcfcfc;
+    background: linear-gradient(to top, rgba(white, 0.3), rgba(#776c88, 0.2));
+
+    &__icon{
+        padding: 60px 0;
+        width: 3em;
+        height: auto;
+    }
+
+    &:hover{
+        box-shadow: 5px 5px 20px 3px rgba(#6E5163, 0.4);
+        transform: scale(1.05)
+    }
+
+    &:hover .large-link_icon{
+        transform: scale(1.2);
+    }
+}
+
+
+.technologies{
+    margin: 15vh 0;
+
+    h3{
+        text-align: center;
+    }
+}

@@ -1,0 +1,28 @@
+.contact{
+    background: linear-gradient(to bottom, #e4cac1 80%, #464459 180%);
+}
+.contact-email{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #4F4659;
+    text-shadow: 3px 3px 14px rgba(black, 0.3);
+
+    @media screen and (max-width:1200px){
+        font-size: 10vw;
+    }
+
+    .highlight{
+        font-size: 1.4em;
+    }
+}
+
+.contact-email:after{
+    content: "Kliknij by skopiować!";
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    left: -100px;
+    font-size: 0.8rem;
+    display: block;
+}

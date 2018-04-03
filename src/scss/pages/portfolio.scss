@@ -1,0 +1,149 @@
+.portfolio{
+    background: white;
+}
+
+.container_works{
+    width: 94vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    @media screen and (min-width:1200px){
+        width: 90vw;
+    }
+
+}
+
+
+
+
+.work{
+    width: 22vw;
+    min-width: 260px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(black, 0.3);
+    overflow: hidden;
+    margin-bottom: 1.4vw;
+
+    @media screen and (min-width:1200px){
+        width: 21vw;
+    }
+
+    @media screen and (max-width:1170px){
+        width: 49%;
+    }
+
+    @media screen and (max-width:790px){
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    &.work__bigger{
+        width: 29vw;
+        min-width: 350px;
+        font-size: 1.2em;
+    }
+    @media screen and (max-width:1200px){
+        &.work__bigger{
+            width: 49%;
+        }
+        &.work__bigger:first-child{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:790px){
+        &.work__bigger{
+            width: 100%;
+            font-size: 1em;
+        }
+    }
+
+
+
+    &__image{
+        position: relative;
+        width: 100%;
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            transition: 0.6s;
+            :hover > &{
+                transform: scale(1.1);
+            }
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: relative;
+            padding-bottom: 99.5%;
+            transition: 0.4s;
+            opacity: 0;
+            background: linear-gradient(to top, rgba(#402127, 0.8), rgba(#9F727A, 0.5));
+
+            :hover > &{
+                opacity: 1 ;
+            }
+            @media screen and (max-width: 1000px){
+                    opacity: 1;
+            }
+        }
+    }
+
+
+
+
+
+    &__content{
+        position:  absolute;
+        box-sizing: border-box;
+        padding: 0 5%;
+        top: 75%;
+        transform: translateY(-50%);
+        opacity: 0;
+        z-index: 1;
+
+        color: white;
+        font-size: 0.9em;
+        line-height: 1.4em;
+        text-align: center;
+
+        transition: 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.575), opacity 0.3s;
+
+        :hover > &{
+            opacity: 1;
+            top: 48%;
+        }
+        @media screen and (max-width: 1000px){
+                opacity: 1;
+                top: 48%;
+                text-shadow: 2px 2px 13px black;
+        }
+
+        .work__title{
+            color: inherit;
+            font-size: 1.3em;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.tools-icons{
+    display: block;
+    margin-top: 1em;
+
+    &__icon{
+        width: 50px;
+        height: 50px;
+        filter: invert(100%);
+    }
+}
